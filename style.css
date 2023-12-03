@@ -141,6 +141,7 @@ button:hover {
 
     footer {
         justify-content: flex-end;
+        margin-right: 4rem;
     }
 
     button:hover {
