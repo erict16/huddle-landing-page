@@ -28,9 +28,9 @@ h1 {
 
 /* Class */
 
-header img{
+header img {
     width: 170px;
-     margin: 3rem 2rem;
+    margin: 3rem 2rem;
 }
 
 body {
@@ -44,10 +44,8 @@ body {
 
 main {
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 footer {
@@ -62,7 +60,6 @@ footer div {
     margin-right: 10px;
     cursor: pointer;
 }
-
 
 
 button {
@@ -85,10 +82,12 @@ button:hover {
 
 /* Class (mobile first) */
 .container {
-    max-width: 80%;
+    /*max-width: 80%;*/
+    padding: 30px;
     flex: 1;
     color: white;
 }
+
 .hero-image {
     content: url("images/illustration-mockups.svg");
     width: 100%;
@@ -100,12 +99,12 @@ button:hover {
 
 .circle-outline {
     width: 30px; /* Adjust the size of the circle */
-  height: 30px; /* Adjust the size of the circle */
-  border: 1px solid white; /* Border creates the outline */
-  border-radius: 50%; /* Creates a circular shape */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 30px; /* Adjust the size of the circle */
+    border: 1px solid white; /* Border creates the outline */
+    border-radius: 50%; /* Creates a circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle-outline:hover {
@@ -113,8 +112,38 @@ button:hover {
 }
 
 
+ /*Desktop view*/
+@media screen and (min-width: 700px) {
+    header img {
+        margin-left: 5rem;
+    }
 
-/* Desktop view*/
-/*@media screen and (min-width: 700px) {*/
-/*    */
-/*}*/
+    .hero-image {
+        max-width: 50%;
+        /*border: dotted;*/
+        margin: 3rem auto;
+    }
+
+    .hero-content {
+        padding: 30px;
+        text-align: left;
+        max-width: 450px;
+    }
+
+
+    .container {
+        padding: 20px;
+        display: flex;
+        max-width: 80%;
+        /*border: solid;*/
+        margin-top: 80px;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+
+    button:hover {
+        background-color: var(--secondary-color);
+    }
+}
